@@ -29,7 +29,7 @@ For this evidence, I will create a Restricted Context-Free Grammar (RCFG). As ex
 
 Here is a visual example using a screenshot from Critchlow, Carol & Eck, David J.'s work:
 
-![](https://github.com/Dieg0Lir4/Implementation-of-Computational-Methods-Evidence-2/blob/main/1.jpg)
+![](https://github.com/Dieg0Lir4/Implementation-of-Computational-Methods-Evidence-2/blob/main/17.jpg)
 
 Critchlow, Carol & Eck, David J. "Context-Free Grammars." LibreTexts, https://eng.libretexts.org/Bookshelves/Computer_Science/Programming_and_Computation_Fundamentals/Foundations_of_Computation_(Critchlow_and_Eck)/04%3A_Grammars/4.01%3A_Context-free_Grammars Accessed April 28, 2024.
 
@@ -47,7 +47,7 @@ The start variable (S) is the starting point for generating strings. It is the v
 
 So let's start by doing a grammar quick grammar not caring about ambiguity
 
-![](https://github.com/Dieg0Lir4/Implementation-of-Computational-Methods-Evidence-2/blob/main/2.jpg)
+![](https://github.com/Dieg0Lir4/Implementation-of-Computational-Methods-Evidence-2/blob/main/16.jpg)
 
 note: The non terminal B has all the option for the boxes in a chessboard, and piece is also a non terminal variable just that I cut it out the screen shot
 
@@ -55,31 +55,31 @@ Now, let's check for ambiguity. For example, let's write, 'White piece captures 
 
 Here is one way of representing it:
 
-![](https://github.com/Dieg0Lir4/Implementation-of-Computational-Methods-Evidence-2/blob/main/3.jpg)
+![](https://github.com/Dieg0Lir4/Implementation-of-Computational-Methods-Evidence-2/blob/main/15.jpg)
 
 however there is another tree to the sentence “white piece captures black piece in b1”
 
-![](https://github.com/Dieg0Lir4/Implementation-of-Computational-Methods-Evidence-2/blob/main/4.jpg)
+![](https://github.com/Dieg0Lir4/Implementation-of-Computational-Methods-Evidence-2/blob/main/14.jpg)
 
 The problem is that 'G' has too many ways of calling itself repeatedly in many different ways. So, let's make the rules more specific and use abbreviated notation to consolidate the rules into a single one.
 
 Here are the new rules to avoid ambiguity:
 
-![](https://github.com/Dieg0Lir4/Implementation-of-Computational-Methods-Evidence-2/blob/main/5.jpg)
+![](https://github.com/Dieg0Lir4/Implementation-of-Computational-Methods-Evidence-2/blob/main/13.jpg)
 
 By adding more non-terminals, I can prevent calling the same non-terminal repeatedly and taking different paths to construct the same sentences. However, now we have to face a new problem: left recursion. Left recursion, as explained by Geeks for Geeks, can create an infinite loop, leading to a decrease in performance.
 
 Here is the left recursion in my grammar:
 
-![](https://github.com/Dieg0Lir4/Implementation-of-Computational-Methods-Evidence-2/blob/main/6.jpg)
+![](https://github.com/Dieg0Lir4/Implementation-of-Computational-Methods-Evidence-2/blob/main/12.jpg)
 
 As you can see, 'G' can grow infinitely to the left without stopping. Let's fix that by using the method demonstrated by Western University on their website: https://www.csd.uwo.ca/~mmorenom/CS447/Lectures/Syntax.html/node8.html
 
-![](https://github.com/Dieg0Lir4/Implementation-of-Computational-Methods-Evidence-2/blob/main/7.jpg)
+![](https://github.com/Dieg0Lir4/Implementation-of-Computational-Methods-Evidence-2/blob/main/11.jpg)
 
 By using that method now the grammar looks like this:
 
-![](https://github.com/Dieg0Lir4/Implementation-of-Computational-Methods-Evidence-2/blob/main/8.jpg)
+![](https://github.com/Dieg0Lir4/Implementation-of-Computational-Methods-Evidence-2/blob/main/10.jpg)
 
 And the tree likes this, eliminating the left recursion:
 
@@ -126,11 +126,13 @@ N ::= 8
 
 First and Follow Table:
 
-![](https://github.com/Dieg0Lir4/Implementation-of-Computational-Methods-Evidence-2/blob/main/10.jpg)
+![](https://github.com/Dieg0Lir4/Implementation-of-Computational-Methods-Evidence-2/blob/main/8.jpg)
 
 Transition Table:
 
-![](https://github.com/Dieg0Lir4/Implementation-of-Computational-Methods-Evidence-2/blob/main/11.jpg)
+![](https://github.com/Dieg0Lir4/Implementation-of-Computational-Methods-Evidence-2/blob/main/7.jpg)
+![](https://github.com/Dieg0Lir4/Implementation-of-Computational-Methods-Evidence-2/blob/main/6.jpg)
+![](https://github.com/Dieg0Lir4/Implementation-of-Computational-Methods-Evidence-2/blob/main/5.jpg)
 
 Now lets make some examples to see if works
 
@@ -142,25 +144,25 @@ white pawn captures black pawn in b 1
 Expecting a success
 Result:
 
-![](https://github.com/Dieg0Lir4/Implementation-of-Computational-Methods-Evidence-2/blob/main/12.jpg)
+![](https://github.com/Dieg0Lir4/Implementation-of-Computational-Methods-Evidence-2/blob/main/4.jpg)
 
 black queen moves to f 4
 Expecting a success
 Result:
 
-![](https://github.com/Dieg0Lir4/Implementation-of-Computational-Methods-Evidence-2/blob/main/13.jpg)
+![](https://github.com/Dieg0Lir4/Implementation-of-Computational-Methods-Evidence-2/blob/main/3.jpg)
 
 black queen captures rook
 Expecting a failure
 Result
 
-![](https://github.com/Dieg0Lir4/Implementation-of-Computational-Methods-Evidence-2/blob/main/14.jpg)
+![](https://github.com/Dieg0Lir4/Implementation-of-Computational-Methods-Evidence-2/blob/main/2.jpg)
 
 white pawn moves to d 9
 Expecting a failure
 Result:
 
-![](https://github.com/Dieg0Lir4/Implementation-of-Computational-Methods-Evidence-2/blob/main/15.jpg)
+![](https://github.com/Dieg0Lir4/Implementation-of-Computational-Methods-Evidence-2/blob/main/1.jpg)
 
 ## Implementation
 
