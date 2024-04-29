@@ -170,13 +170,73 @@ The code is in the file: evidencia2.py
 
 To run the code in the project terminal, use the following command:
 
-'''
+```
 python evidencia2.py
-'''
+```
 
 It will prompt you to enter a sentence and will return the tree with a message if it is valid. If it's not valid, it will display a message saying it's invalid.
 
 Note: In some trees, due to the word size, the tree may display the word order incorrectly, but if it's valid.
+
+#### HOWEVER, I recommend using this link to run python online in case it is not working locally: https://colab.research.google.com/drive/1e9Y42n0k0-RqTfDpTF4azuzjQcgoVZ6M?usp=sharing
+
+## TESTS
+
+You can run the tests by typing:
+
+run all tests
+
+When prompted to enter a sentence.
+
+If you want to manually test:
+
+Here are the inputs with the expected results:
+
+VALID:
+
+INPUT: black pawn moves to 5 c.
+
+INPUT: white king captures black bishop in 3 b.
+
+INPUT: black queen captures white knight in 2 a.
+
+INVALID:
+
+INPUT: black pawn moves to 9 c.
+
+INPUT: white king captures bishop in 3 b.
+
+INPUT: queen captures white knight in 2 a.
+
+### IMPORTANT NOTE: don't forget the period (.) at the end of the sentences if writing the testes manually. Using words not defined in the grammar will end the program. The first time it will take time to start because is downloding punkt
+
+## Analysis
+
+This is a Context-Free Grammar (CFG), and Context-Free Grammars are at Level 2 of the Chomsky Hierarchy.
+Since are classifed in four types
+
+Type 0: Unrestricted grammars
+Type 1: Context-sensitive grammars
+Type 2: Context-free grammars
+Type 3: Regular grammars
+
+Is type 2 because:
+
+the left-hand side of each production rule consists of a single non-terminal symbol
+
+right-hand side of each production rule can be a sequence of terminals and/or non-terminals.
+
+Why is not type 0 or 1:
+
+0 and 1 allow production rules where the left-hand side can have more than one symbol, or even an empty string.
+
+Why is not type 3:
+
+3 allows for production rules where the right-hand side has no more than one non-terminal, which must be at the end
+
+
+
+
 
 
 
