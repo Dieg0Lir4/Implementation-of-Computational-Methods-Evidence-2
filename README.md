@@ -220,7 +220,7 @@ Type 1: Context-sensitive grammars
 Type 2: Context-free grammars
 Type 3: Regular grammars
 
-Is type 2 because:
+why is type 2 because:
 
 the left-hand side of each production rule consists of a single non-terminal symbol
 
@@ -228,11 +228,25 @@ right-hand side of each production rule can be a sequence of terminals and/or no
 
 Why is not type 0 or 1:
 
-0 and 1 allow production rules where the left-hand side can have more than one symbol, or even an empty string.
+0 and 1 allow production rules where the left-hand side can have a string of terminals and/or non-terminals
 
 Why is not type 3:
 
 3 allows for production rules where the right-hand side has no more than one non-terminal, which must be at the end
+
+## Bibliography
+
+Chess notation & algebraic notation. (n.d.). Chess.com. https://www.chess.com/terms/chess-notation
+
+Libretexts. (2020, July 7). 4.1: Context-free grammars. Engineering LibreTexts. https://eng.libretexts.org/Bookshelves/Computer_Science/Programming_and_Computation_Fundamentals/Foundations_of_Computation_(Critchlow_and_Eck)/04%3A_Grammars/4.01%3A_Context-free_Grammars
+
+Context free grammars. (n.d.). http://www2.lawrence.edu/fast/GREGGJ/CMSC515/chapt02/CFG.html
+
+GeeksforGeeks. (2023, April 18). Removing direct and indirect left recursion in a grammar. GeeksforGeeks. https://www.geeksforgeeks.org/removing-direct-and-indirect-left-recursion-in-a-grammar/
+
+Elimination of left recursion. (n.d.). https://www.csd.uwo.ca/~mmorenom/CS447/Lectures/Syntax.html/node8.html
+
+Wikipedia contributors. (2024, April 22). Chomsky hierarchy. Wikipedia. https://en.wikipedia.org/wiki/Chomsky_hierarchy
 
 
 
