@@ -29,7 +29,7 @@ For this evidence, I will create a Restricted Context-Free Grammar (RCFG). As ex
 
 Here is a visual example using a screenshot from Critchlow, Carol & Eck, David J.'s work:
 
-# [IMAGEN!!!!!!!!!!!!!!]
+![](https://github.com/Dieg0Lir4/Implementation-of-Computational-Methods-Evidence-2/blob/main/1.jpg)
 
 Critchlow, Carol & Eck, David J. "Context-Free Grammars." LibreTexts, https://eng.libretexts.org/Bookshelves/Computer_Science/Programming_and_Computation_Fundamentals/Foundations_of_Computation_(Critchlow_and_Eck)/04%3A_Grammars/4.01%3A_Context-free_Grammars Accessed April 28, 2024.
 
