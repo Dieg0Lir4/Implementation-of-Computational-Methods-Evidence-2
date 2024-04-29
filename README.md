@@ -162,6 +162,21 @@ Result:
 
 # IMAGEN
 
+## Implementation
+
+Please make sure you have NLTK installed to run this code. You can install it with pip install nltk. Additionally, download the punkt package.
+
+The code is in the file: evidencia2.py
+
+To run the code in the project terminal, use the following command:
+
+'''
+python evidencia2.py
+'''
+
+It will prompt you to enter a sentence and will return the tree with a message if it is valid. If it's not valid, it will display a message saying it's invalid.
+
+Note: In some trees, due to the word size, the tree may display the word order incorrectly, but if it's valid.
 
 
 
