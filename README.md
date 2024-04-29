@@ -47,7 +47,7 @@ The start variable (S) is the starting point for generating strings. It is the v
 
 So let's start by doing a grammar quick grammar not caring about ambiguity
 
-# [IMAGENNN!!!!!!!!]
+![](https://github.com/Dieg0Lir4/Implementation-of-Computational-Methods-Evidence-2/blob/main/2.jpg)
 
 note: The non terminal B has all the option for the boxes in a chessboard, and piece is also a non terminal variable just that I cut it out the screen shot
 
@@ -55,35 +55,35 @@ Now, let's check for ambiguity. For example, let's write, 'White piece captures 
 
 Here is one way of representing it:
 
-# [IMAGEEENNN!!!!!]
+![](https://github.com/Dieg0Lir4/Implementation-of-Computational-Methods-Evidence-2/blob/main/3.jpg)
 
 however there is another tree to the sentence “white piece captures black piece in b1”
 
-# [IMAGENNN!!!!!]
+![](https://github.com/Dieg0Lir4/Implementation-of-Computational-Methods-Evidence-2/blob/main/4.jpg)
 
 The problem is that 'G' has too many ways of calling itself repeatedly in many different ways. So, let's make the rules more specific and use abbreviated notation to consolidate the rules into a single one.
 
 Here are the new rules to avoid ambiguity:
 
-# [IMAGEENNN!!!!]
+![](https://github.com/Dieg0Lir4/Implementation-of-Computational-Methods-Evidence-2/blob/main/5.jpg)
 
 By adding more non-terminals, I can prevent calling the same non-terminal repeatedly and taking different paths to construct the same sentences. However, now we have to face a new problem: left recursion. Left recursion, as explained by Geeks for Geeks, can create an infinite loop, leading to a decrease in performance.
 
 Here is the left recursion in my grammar:
 
-# [IMAGEEEENNN!!!!!]
+![](https://github.com/Dieg0Lir4/Implementation-of-Computational-Methods-Evidence-2/blob/main/6.jpg)
 
 As you can see, 'G' can grow infinitely to the left without stopping. Let's fix that by using the method demonstrated by Western University on their website: https://www.csd.uwo.ca/~mmorenom/CS447/Lectures/Syntax.html/node8.html
 
-# IMAGEEENNN!!!!
+![](https://github.com/Dieg0Lir4/Implementation-of-Computational-Methods-Evidence-2/blob/main/7.jpg)
 
 By using that method now the grammar looks like this:
 
-# IMAGENENNENEN!!!!
+![](https://github.com/Dieg0Lir4/Implementation-of-Computational-Methods-Evidence-2/blob/main/8.jpg)
 
 And the tree likes this, eliminating the left recursion:
 
-# Imagen!!!
+![](https://github.com/Dieg0Lir4/Implementation-of-Computational-Methods-Evidence-2/blob/main/9.jpg)
 
 Now lets use this website https://www.cs.princeton.edu/courses/archive/spring20/cos320/LL1/
 
@@ -126,11 +126,11 @@ N ::= 8
 
 First and Follow Table:
 
-# IMAGEEENN !!!!!
+![](https://github.com/Dieg0Lir4/Implementation-of-Computational-Methods-Evidence-2/blob/main/10.jpg)
 
 Transition Table:
 
-# IMAGEENNESSSSSSSSSSS!!!!!
+![](https://github.com/Dieg0Lir4/Implementation-of-Computational-Methods-Evidence-2/blob/main/11.jpg)
 
 Now lets make some examples to see if works
 
@@ -142,25 +142,25 @@ white pawn captures black pawn in b 1
 Expecting a success
 Result:
 
-# IMAGEN
+![](https://github.com/Dieg0Lir4/Implementation-of-Computational-Methods-Evidence-2/blob/main/12.jpg)
 
 black queen moves to f 4
 Expecting a success
 Result:
 
-# IMAGEN
+![](https://github.com/Dieg0Lir4/Implementation-of-Computational-Methods-Evidence-2/blob/main/13.jpg)
 
 black queen captures rook
 Expecting a failure
 Result
 
-# IMAGEN
+![](https://github.com/Dieg0Lir4/Implementation-of-Computational-Methods-Evidence-2/blob/main/14.jpg)
 
 white pawn moves to d 9
 Expecting a failure
 Result:
 
-# IMAGEN
+![](https://github.com/Dieg0Lir4/Implementation-of-Computational-Methods-Evidence-2/blob/main/15.jpg)
 
 ## Implementation
 
