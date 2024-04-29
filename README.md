@@ -3,8 +3,6 @@
 ## Description
 
 
-Here's your text with some spelling, grammar, and redaction corrections:
-
 The grammar that I have chosen is a new notation for chess moves. Chess notation is a system used to record the moves played in a game of chess. In this system, each square on the board has a unique identifier based on a combination of a letter and a number. The letters represent the columns of the board, from "a" to "h", and the numbers represent the rows from 1 to 8.
 
 For example, the movement of a pawn from the e2 square to the e4 square is written down as "e4". Another example is when a knight moves from the g1 square to the f3 square, then it is recorded as "Nf3", where "N" represents the knight.
