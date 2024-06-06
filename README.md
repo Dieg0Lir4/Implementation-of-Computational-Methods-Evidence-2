@@ -199,11 +199,11 @@ Here are the inputs with the expected results:
 
 VALID:
 
-INPUT: black pawn moves to 5 c .
+INPUT: black pawn moves to c 5 .
 
-INPUT: white king captures black bishop in 3 b .
+INPUT: white king captures black bishop in b 3 .
 
-INPUT: black queen captures white knight in 2 a .
+INPUT: black queen captures white knight in a 2 .
 
 INVALID:
 
@@ -238,6 +238,11 @@ Why is not type 0 or 1:
 Why is not type 3:
 
 3 allows for production rules where the right-hand side has no more than one non-terminal, which must be at the end
+
+
+Now lets check its time complexity
+
+
 
 ## Bibliography
 
