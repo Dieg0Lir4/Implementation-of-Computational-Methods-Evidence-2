@@ -164,7 +164,12 @@ Result:
 
 ## Implementation
 
-Please make sure you have NLTK installed to run this code. You can install it with pip install nltk. Additionally, download the punkt package.
+Please make sure you have NLTK installed to run this code. You can install it with 
+```
+pip install nltk
+```
+
+Additionally, download the punkt package.
 
 The code is in the file: evidencia2.py
 
