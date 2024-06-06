@@ -242,6 +242,13 @@ Why is not type 3:
 
 Now lets check its time complexity
 
+Acoriding to geeksforgeeks tokenizing has a time complexity O(n-d) where n = length of string and d = number ordelimiters.
+So in this part of the code
+
+```
+
+
+```
 
 
 ## Bibliography
@@ -257,6 +264,8 @@ GeeksforGeeks. (2023, April 18). Removing direct and indirect left recursion in 
 Elimination of left recursion. (n.d.). https://www.csd.uwo.ca/~mmorenom/CS447/Lectures/Syntax.html/node8.html
 
 Wikipedia contributors. (2024, April 22). Chomsky hierarchy. Wikipedia. https://en.wikipedia.org/wiki/Chomsky_hierarchy
+
+GeeksforGeeks. (2023, January 2). Tokenizing a string in C. GeeksforGeeks. https://www.geeksforgeeks.org/tokenizing-a-string-cpp/
 
 
 
