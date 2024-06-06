@@ -199,19 +199,19 @@ Here are the inputs with the expected results:
 
 VALID:
 
-INPUT: black pawn moves to 5 c.
+INPUT: black pawn moves to 5 c .
 
-INPUT: white king captures black bishop in 3 b.
+INPUT: white king captures black bishop in 3 b .
 
-INPUT: black queen captures white knight in 2 a.
+INPUT: black queen captures white knight in 2 a .
 
 INVALID:
 
-INPUT: black pawn moves to 9 c.
+INPUT: black pawn moves to 9 c .
 
-INPUT: white king captures bishop in 3 b.
+INPUT: white king captures bishop in 3 b .
 
-INPUT: queen captures white knight in 2 a.
+INPUT: queen captures white knight in 2 a .
 
 ### IMPORTANT NOTE: don't forget the period (.) at the end of the sentences if writing the testes manually. Using words not defined in the grammar will end the program. The first time it will take time to start because is downloding punkt
 
