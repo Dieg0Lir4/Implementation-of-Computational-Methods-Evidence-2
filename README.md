@@ -242,13 +242,14 @@ Why is not type 3:
 
 Now lets check its time complexity
 
-Acoriding to geeksforgeeks tokenizing has a time complexity O(n-d) where n = length of string and d = number ordelimiters.
+Acoriding to geeksforgeeks tokenizing has a time complexity O(n) where n = length of string depending the type of tokenizing
 So in this part of the code
 
 ```
-
+tokens = nltk.word_tokenize(sentence)
 
 ```
+the time complexity is O(n) becuase the only delimters that it has is the space. 
 
 
 ## Bibliography
