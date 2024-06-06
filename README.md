@@ -188,9 +188,9 @@ Note: In some trees, due to the word size, the tree may display the word order i
 ## TESTS
 
 You can run the tests by typing:
-
+```
 run all tests
-
+```
 When prompted to enter a sentence.
 
 If you want to manually test:
