@@ -89,38 +89,38 @@ to check that my grammar is correct
 
 Writing my grammar:
 
-G ::= P G'
-G' ::= M G'
-G' ::= ''
-M ::= captures P in B
-M ::= moves to B
-M ::= checkmates C king in B
-P ::= C F
-C ::= black
-C ::= white
-F ::= king
-F ::= queen
-F ::= bishop
-F ::= knight
-F ::= rook
-F ::= pawn
-B ::= L N
-L ::= a
-L ::= b
-L ::= c
-L ::= d
-L ::= e
-L ::= f
-L ::= g
-L ::= h
-N ::= 1
-N ::= 2
-N ::= 3
-N ::= 4
-N ::= 5
-N ::= 6
-N ::= 7
-N ::= 8
+* G ::= P G'
+* G' ::= M G'
+* G' ::= ''
+* M ::= captures P in B
+* M ::= moves to B
+* M ::= checkmates C king in B
+* P ::= C F
+* C ::= black
+* C ::= white
+* F ::= king
+* F ::= queen
+* F ::= bishop
+* F ::= knight
+* F ::= rook
+* F ::= pawn
+* B ::= L N
+* L ::= a
+* L ::= b
+* L ::= c
+* L ::= d
+* L ::= e
+* L ::= f
+* L ::= g
+* L ::= h
+* N ::= 1
+* N ::= 2
+* N ::= 3
+* N ::= 4
+* N ::= 5
+* N ::= 6
+* N ::= 7
+* N ::= 8
 
 First and Follow Table:
 
